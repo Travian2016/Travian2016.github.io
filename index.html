@@ -1,24 +1,46 @@
----
-layout: posts
----
-        {% for post in paginator.posts %}
-        <li>
-            <time>{{ post.date | date_to_string }}</time>
-            <h3>{% if page.link %}<a href="{{ post.link }}">{{ post.title }}</a> *{% else %}<a href="{{ post.url }}">{{ post.title }}</a>{% endif %}</h3>
-            {{ post.content }}
-        </li>
-        {% endfor %}
-    </ul>
-</article>
+<!DOCTYPE html>
+<html>
 
-{% if paginator.total_pages > 1 %}
-<div class="paginator">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">Back</a>
-  {% endif %}
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Travian2016.GitHub.io : ">
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
-  {% endif %}
-</div>
-{% endif %}
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Travian2016.GitHub.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Travian2016">View on GitHub</a>
+
+          <h1 id="project_title">Travian2016.GitHub.io</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>السلام عليكم
+حرب التتار -ملوك حرب التتار
+<a href="http://travianr.com/ts3/register.php?ref=179">http://travianr.com/ts3/register.php?ref=179</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
